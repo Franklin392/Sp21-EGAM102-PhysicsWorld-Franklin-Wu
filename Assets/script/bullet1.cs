@@ -13,6 +13,6 @@ public class bullet1 : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        AK47.AddForce(new Vector2(2, 0));
+        AK47.AddForce(new Vector2(20, 0));
     }
 }
