@@ -14,11 +14,15 @@ public class SquishyBox : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
-    {
-        SpriteShapeController.spline.SetPosition(0, CornerObjects[0].position);
-        SpriteShapeController.spline.SetPosition(0, CornerObjects[1].position);
-        SpriteShapeController.spline.SetPosition(0, CornerObjects[2].position);
-        SpriteShapeController.spline.SetPosition(0, CornerObjects[3].position);
+    void FixedUpdate()
+    {   for(int pointID=0; pointID < CornerObjects.Length; pointID++)
+        {
+            SpriteShapeController.spline.SetPosition(pointID, CornerObjects[pointID].localPosition);
+        }
+
+        //SpriteShapeController.spline.SetPosition(0, CornerObjects[0].position);
+       // SpriteShapeController.spline.SetPosition(1, CornerObjects[1].position);
+        //SpriteShapeController.spline.SetPosition(2, CornerObjects[2].position);
+        //SpriteShapeController.spline.SetPosition(3, CornerObjects[3].position);
     }
 }
