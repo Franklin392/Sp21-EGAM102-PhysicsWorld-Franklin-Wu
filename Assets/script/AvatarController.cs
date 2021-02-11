@@ -5,7 +5,7 @@ using UnityEngine;
 public class AvatarController : MonoBehaviour
 {
     public float MovementStrength;
-    public float jumpSpeed = 10f;
+    public float jumpSpeed = 100f;
 
     // Update is called once per frame
     void Update()
