@@ -1171,8 +1171,8 @@ MonoBehaviour:
   velocity: {x: 0, y: 5, z: 0}
   acceleration: {x: 0, y: 0, z: 0}
   TotalForce: {x: 0, y: 0, z: 0}
-  Gravity: {x: 0, y: 0, z: 0}
-  mass: 0.01
+  Gravity: {x: 0, y: 0.2, z: 0}
+  mass: 1
 --- !u!114 &383815247
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1186,10 +1186,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ExplosionPiecePrefab: {fileID: 7467612039031000402, guid: 0a12ffe3527349141a60dad3b7d1bacc, type: 3}
-  RocketForce: {x: 0, y: 0, z: 0}
+  RocketForce: {x: 0, y: 0.1, z: 0}
   RocketDuration: 3
   ExplosionForce: 10
-  ExplosionDelay: 5
+  ExplosionDelay: 3
 --- !u!1 &389023323
 GameObject:
   m_ObjectHideFlags: 0
