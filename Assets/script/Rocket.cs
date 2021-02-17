@@ -30,7 +30,7 @@ public class Rocket : MonoBehaviour
         }
         if (Time.time > ExplosionTime)
         {
-            for (int i = 0; i < 50; i++)
+            for (int i = 0; i < 7; i++)
             {
                 newExplosionPiece = Instantiate(ExplosionPiecePrefab); // Make a new things
                 newExplosionPiece.transform.position = this.transform.position;  // start where u are
