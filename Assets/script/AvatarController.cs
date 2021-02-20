@@ -7,7 +7,11 @@ public class AvatarController : MonoBehaviour
     public float MovementStrength;
     public float jumpSpeed = 10f;
 
-    // Update is called once per frame
+    Object bullet556;
+    void Start()
+    {
+        bullet556 = Resources.Load("jumpfire");
+    }
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.Space))
@@ -15,6 +19,9 @@ public class AvatarController : MonoBehaviour
             Rigidbody2D LS;
             LS = GetComponent<Rigidbody2D>();
             LS.velocity = (Vector2.up * jumpSpeed);
+
+            GameObject bullet = (GameObject)Instantiate(bullet556);
+            bullet.transform.position = new Vector3(transform.position.x + .2f, transform.position.y + .4f, -1);
         }
 
     }
