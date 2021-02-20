@@ -3083,6 +3083,7 @@ GameObject:
   - component: {fileID: 1019405603}
   - component: {fileID: 1019405602}
   - component: {fileID: 1019405604}
+  - component: {fileID: 1019405605}
   - component: {fileID: 1019405601}
   m_Layer: 0
   m_Name: avatar
@@ -3164,7 +3165,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1019405598}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9a99c2517fda23047bdfb3b73ee0b31b, type: 3}
   m_Name: 
@@ -3217,7 +3218,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!114 &1019405604
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3225,7 +3226,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1019405598}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 985eb75c53b1cfd4bb3747e4fb64a6a2, type: 3}
   m_Name: 
@@ -3233,6 +3234,18 @@ MonoBehaviour:
   controller: {fileID: 0}
   speed: 10
   jumpforce: 5
+--- !u!114 &1019405605
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1019405598}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c32ae3abf05234d4887b316e1e388886, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1068010086
 GameObject:
   m_ObjectHideFlags: 0
